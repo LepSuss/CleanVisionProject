@@ -1,0 +1,50 @@
+/*
+background: #090909
+main green: #33cd77
+*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.result {
+  height: calc(100% - 5em); /* fills whole screen minus header's height */
+  background-color: #090909;
+  color: #33cd77;
+  text-align: center;
+}
+
+.result-flex {
+  margin-top: 5%;
+  display: inline-flex;
+  align-items: center;
+  /*border: 2px white solid;*/
+}
+
+.result-child {
+  margin: 1em;
+  /*border: 2px blue solid; */
+  flex: 1;
+}
+
+#result-text {
+  font-size: 1.5rem;
+}
+
+#scan-btn {
+  /* height and width could be changed to dynamic values */
+  height: 8rem;
+  width: 8rem;
+  background-color: #2f3031;
+  color: #b7b7b7;
+  font-size: 1.5rem;
+  border: 5px solid #33cd77;
+  border-radius: 50%;
+  outline: 0;
+}
+
+#scan-btn:hover {
+  background-color: #434346;
+}

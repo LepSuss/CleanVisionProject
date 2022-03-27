@@ -1,0 +1,13 @@
+header {
+  height: 5em;
+  background-color: #222324;
+  position: relative;
+}
+
+#logo {
+  max-height: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

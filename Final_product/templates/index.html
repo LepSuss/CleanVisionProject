@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='header.css')}}"
+    />
+  </head>
+  {% include "header.html" %}
+  <body>
+    <div class="result">
+      <div class="result-flex">
+        <form class="result-child left-child" action="/results/" method="post">
+          <button id="scan-btn">SCAN</button>
+        </form>
+        <p class="result-child" id="result-text">
+          {{result | default('Place the mop on the platform and press scan.', true)}}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
